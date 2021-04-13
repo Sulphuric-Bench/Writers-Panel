@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
+
+/* font-family: 'Teko', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 200vh;
+  background: linear-gradient(
+    180deg,
+    #ffffff -47.29%,
+    rgba(253, 164, 255, 0.62) 159%
+  );
+  overflow-x: hidden;
+}
+
+.box-area li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #d876a9;
+  animation: animates 60s linear infinite;
+  bottom: -100vh;
+  z-index: -10000;
+}
+
+.box-area li:nth-child(1) {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 107px;
+  animation-delay: 2s;
+}
+
+.box-area li:nth-child(2) {
+  position: absolute;
+  width: 113px;
+  height: 115px;
+  left: -80px;
+
+  animation-delay: 3.5s;
+  animation-duration: 13s;
+}
+
+.box-area li:nth-child(3) {
+  width: 40px;
+  height: 40px;
+  left: 188px;
+
+  animation-delay: 5s;
+}
+
+.box-area li:nth-child(4) {
+  width: 20px;
+  height: 20px;
+  left: 54px;
+
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+
+.box-area li:nth-child(5) {
+  width: 40px;
+  height: 40px;
+  left: 450px;
+  animation-delay: 1s;
+}
+
+.box-area li:nth-child(6) {
+  width: 40px;
+  height: 40px;
+  left: 311px;
+  animation-delay: 6s;
+}
+
+.box-area li:nth-child(7) {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 107px;
+  animation-delay: 2s;
+}
+
+.box-area li:nth-child(8) {
+  position: absolute;
+  width: 113px;
+  height: 115px;
+  right: -80px;
+
+  animation-delay: 1.5s;
+  animation-duration: 15s;
+}
+
+.box-area li:nth-child(9) {
+  width: 40px;
+  height: 40px;
+  right: 188px;
+
+  animation-delay: 4.5s;
+}
+
+.box-area li:nth-child(10) {
+  width: 20px;
+  height: 20px;
+  right: 54px;
+
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+
+.box-area li:nth-child(11) {
+  width: 40px;
+  height: 40px;
+  right: 380px;
+  animation-delay: 3s;
+}
+
+.box-area li:nth-child(12) {
+  width: 40px;
+  height: 40px;
+  right: 311px;
+  animation-delay: 2.5s;
+}
+
+@keyframes animates {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-200vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+img.logo {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3.head {
+  text-transform: uppercase;
+  font-family: "Teko", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  color: #350b40;
+  text-align: center;
+}
+
+form.card {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  background: #350b40;
+  border-radius: 50px;
+  padding: 30px 30px 73px 30px;
+  padding-right: 60px;
+  z-index: 1;
+  box-shadow: 0px 0px 10px gray;
+}
+
+form.card div.sub-card {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+
+form.card svg {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+form.card div.sub-card div.any label {
+  font-family: "Teko", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: block;
+  margin-left: 10px;
+}
+
+form.card div.sub-card div.any input {
+  padding-left: 15px;
+  width: 400px;
+  background: #ffffff;
+  color: #350b40;
+  border-radius: 10px;
+  height: 30px;
+  text-transform: capitalize;
+  font-family: "Teko";
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+}
+
+form.card div.sub-card div.any input:focus {
+  outline-width: 0px;
+  box-shadow: 0 0 0 3px #fff;
+  background: #350b40;
+  color: #fff;
+}
+
+button.submit {
+  display: block;
+  margin: 30px auto 0px auto;
+  background: #9f5f80;
+  border: 3px solid #350b40;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px gray;
+  width: 180px;
+  height: 70px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button.submit label {
+  color: #fff;
+  font-family: "Teko", sans-serif;
+  font-size: 25px;
+  padding: 20px 5px 20px 10px;
+  cursor: pointer;
+}
+
+button.submit i.fa {
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+button.submit:focus {
+  outline-width: 0px;
+}
+
+button.submit:hover {
+  background: #350b40;
+  box-shadow: 4px 4px 0px #9f5f80;
+}
+
+@media only screen and (max-width: 600px) {
+  body#body {
+    height: 220vh;
+  }
+
+  form.card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    background: #350b40;
+    border-radius: 50px;
+    padding-right: 60px;
+    z-index: 1;
+    box-shadow: 0px 0px 10px gray;
+  }
+
+  form.card div.sub-card div.any input {
+    width: 48vw;
+    background: #ffffff;
+    color: #350b40;
+    border: none;
+    border-radius: 30px;
+    height: 5vh;
+    text-transform: uppercase;
+    font-family: "Teko";
+    font-size: 20px;
+  }
+  button.submit {
+    width: 56%;
+  }
+}
